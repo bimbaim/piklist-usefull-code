@@ -1,0 +1,15 @@
+<?php
+
+/* This Code write befor any field's code in file inside forms folder in piklist */
+
+$id = get_the_ID();
+
+piklist('field', array(
+	'type' => 'hidden'
+	,'scope' => 'post'
+	,'object_id' => ($id ? $id : null)
+	,'field' => 'post_type'
+	,'value' => 'CPT'
+));
+
+?>
